@@ -57,18 +57,18 @@ def main(args):
     df = pd.DataFrame(video_list) 
 
     if args.alpha:
-        df = sort.sortByVideoTitle(args.ascending, df)
+        df = sort.sortByVideoTitle(args.descending, df)
     elif args.views:
-        df = sort.sortByView(args.ascending, df)
+        df = sort.sortByView(args.descending, df)
     elif args.duration:
-        df = sort.sortByTime(args.ascending,df)
+        df = sort.sortByTime(args.descending,df)
 
     if args.output_directory is not None:
         #create directory if it doesn't exists
         if not os.path.exists(args.output_directory):
             os.makedirs(args.output_directory)
         if args.filename is not None:
-            df.to_csv(args.output_directory+'/'+args.filename, index=True)
+            df.to_csv(args.output_directory+'/'+args.filename+'.csv', index=True)
         else:
             df.to_csv(args.output_directory+'/'+'output.csv', index=True)
     else:
