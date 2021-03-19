@@ -2,6 +2,7 @@
 Python application to get youtube trending videos from any location and write to a csv file
 
 # Dependencies
+- Firefox<br/>
 - Gecko Driver<br/>
 - Selenium<br/>
 
