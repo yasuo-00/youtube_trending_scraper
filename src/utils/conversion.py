@@ -42,10 +42,8 @@ def posted_time_conversion(matchobj):
     hour = matchobj.group(1)
     min = matchobj.group(2)
     sec = matchobj.group(3)
-    #print(matchobj.group(1))
-    lista =  [0,1,2,3,4,5,6,7,8,9]
+
     time_in_min = int(min)*60+int(sec)
     if hour !='':
         time_in_min+=int(hour)*360
-    print(time_in_min)
     return "{}".format(time_in_min)

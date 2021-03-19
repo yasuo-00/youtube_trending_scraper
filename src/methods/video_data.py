@@ -30,9 +30,9 @@ def get_video_data( scraper):
                     #(By.XPATH, './/ytd-thumbnail-overlay-time-status-renderer[@class="style-scope ytd-thumbnail"]'))).text
                 except TimeoutException:
                     video_duration=''
-                    #print("FAILED")             
+                    print("FAILED")             
 
-                #print(video_duration)
+
                 views = views.split(' ')[0]
                 #transform scraped data into a dict
                 videoData = {
