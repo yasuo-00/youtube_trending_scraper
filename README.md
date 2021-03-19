@@ -17,7 +17,7 @@ Create a .env file on root folder and add geckodriver installed location on geck
  - **--duration**: Sort by video duration
  - **--alpha**: Sort by video title
  - **--views**: Sort by video views
- - **--a/--ascending**: Sort in ascending order
+ - **--d/--descending**: Sort in ascending order
 
 # How to Run
 To run type:
