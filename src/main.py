@@ -21,7 +21,7 @@ group.add_argument('--date', action='store_true', help='Sort By Date')
 group.add_argument('--duration', action='store_true', help='Sort By Video Duration')
 group.add_argument('--alpha', action='store_true', help='Sort By Video Name')
 group.add_argument('--views', action='store_true', help='Sort By Views')
-parser.add_argument('-a', '--ascending', action='store_true', help='Sort In Ascending Order')
+parser.add_argument('-d', '--descending', action='store_true', help='Sort In Descending Order')
 args= parser.parse_args()
 
 
